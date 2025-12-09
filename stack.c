@@ -3,6 +3,8 @@
 #include "stack.h"
 #include <string.h>
 
+// Modified by 202213421 Lim DongHyuen(임동현)
+
 Stack * create_stack(int initial_size)
 {
 	Stack * s = (Stack *)malloc(sizeof(Stack));
@@ -74,3 +76,9 @@ static void reallocate(Stack * stack)
 	stack->contents = tmp;
 }
 
+void print_int_array(int a[], int n){ // 간단한 배열을 출력하는 함수
+	for (int i = 0; i < n; i++){
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+}

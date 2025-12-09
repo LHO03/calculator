@@ -2,6 +2,8 @@
 #define STACK_H
 #include <stdbool.h> 
 
+// Modified by 202213421 Lim DongHyuen(임동현)
+
 typedef int Item;
 typedef struct stack {
 Item * contents;
@@ -18,4 +20,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+void print_int_array(int a[], int n);
 #endif
